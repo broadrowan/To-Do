@@ -26,10 +26,15 @@
 
 This project provides both a frontend and backend implementation for a todo web application.
 
-## phpmyadmin
+## notes
+
+phpmyadmin
 
 If you forget how to commit
 https://zeroesandones.medium.com/how-to-commit-and-push-your-changes-to-your-github-repository-in-vscode-77a7a3d7dd02
+
+Personal Access Token:
+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
 
 ## Description
 

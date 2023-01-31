@@ -83,7 +83,7 @@ function Tasks() {
   return (
     <>
       <div className="Tasks">
-        <h1>Tasks</h1>
+        <h1 class="tasks">Tasks</h1><br></br><br></br>
         <table>
           <thead>
             <tr>

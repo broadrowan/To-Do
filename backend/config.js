@@ -4,7 +4,7 @@ module.exports = {
         dialect: "sqlite"
     },
     development: {
-        dsn: "mysql://todo:todo@localhost/todo",
+        dsn: "mysql://To-Do:todo@localhost/To-Do",
         dialect: "mysql"
     }
 };
