@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/0x0.jpg?format=jpg&width=1200);
+  background-size:100%;
+  font-style: italics;
 }
 
 code {
@@ -17,7 +20,6 @@ table {
 }
 
 td, th {
-  border: 1px solid #ddd;
   padding: 20px;
 }
 
@@ -39,10 +41,6 @@ th {
   text-align: left;
   background-color: #8fb1e9;
   color: black;
-}
-
-body {
-  background-image: url(https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/0x0.jpg?format=jpg&width=1200);
 }
 
 h1 {
@@ -71,4 +69,12 @@ a:active {
 
 th, tr, td {
   border: 2px solid black;
+}
+
+.input {
+  border: 2px solid black;
+}
+
+::placeholder {
+  color:rgb(65, 65, 65)
 }

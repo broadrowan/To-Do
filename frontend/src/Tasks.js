@@ -79,7 +79,7 @@ function Tasks() {
       })
     })
   }
-
+const [hideCompletedTodos, setHideCompletedTodos] = useState(false)
   return (
     <>
       <div className="Tasks">
@@ -87,7 +87,7 @@ function Tasks() {
         <table>
           <thead>
             <tr>
-              <th>Todo ID</th>
+              <th>To-do ID</th>
               <th>Title</th>
               <th>Completed</th>
               <th>Actions</th>
@@ -95,13 +95,18 @@ function Tasks() {
           </thead>
 
           <tbody>
-            {tasks.map((todo) => {
+            {tasks.filter(
+              (todo) => todo.completed !== hideCompletedTodos || !hideCompletedTodos
+            ).map ((todo) => {
               return <Todo key={todo.id} todo={todo} deleteTodo={deleteTodo} setTodoCompleted={setTodoCompleted} />
             })}
           </tbody>
         </table>
       </div>
-
+      <br></br>
+      <button class="submit" onClick={()=> setHideCompletedTodos (!hideCompletedTodos)}>
+        {hideCompletedTodos ? "Show all items" : "Show incompleted items only"}
+      </button>
       <div>
         <TodoForm addTodo={addTodo} />
       </div>
